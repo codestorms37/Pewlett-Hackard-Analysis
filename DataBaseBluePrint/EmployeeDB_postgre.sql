@@ -29,40 +29,28 @@ CREATE TABLE "dept_emp" (
     "emp_no" int   NOT NULL,
     "dept_no" varchar(4)   NOT NULL,
     "from_date" date   NOT NULL,
-    "to_date" date   NOT NULL,
-    CONSTRAINT "pk_dept_emp" PRIMARY KEY (
-        "emp_no","dept_no"
-     )
+    "to_date" date   NOT NULL
 );
 
 CREATE TABLE "dept_manager" (
     "dept_no" varchar(4)   NOT NULL,
     "emp_no" int   NOT NULL,
     "from_date" date   NOT NULL,
-    "to_date" date   NOT NULL,
-    CONSTRAINT "pk_dept_manager" PRIMARY KEY (
-        "dept_no","emp_no"
-     )
+    "to_date" date   NOT NULL
 );
 
 CREATE TABLE "salaries" (
     "emp_no" int   NOT NULL,
     "salary" int   NOT NULL,
     "from_date" date   NOT NULL,
-    "to_date" date   NOT NULL,
-    CONSTRAINT "pk_salaries" PRIMARY KEY (
-        "emp_no"
-     )
+    "to_date" date   NOT NULL
 );
 
 CREATE TABLE "titles" (
     "emp_no" int   NOT NULL,
     "title" varchar   NOT NULL,
     "from_date" date   NOT NULL,
-    "to_date" date   NOT NULL,
-    CONSTRAINT "pk_titles" PRIMARY KEY (
-        "emp_no"
-     )
+    "to_date" date   NOT NULL
 );
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
