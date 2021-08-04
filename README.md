@@ -37,19 +37,23 @@
 | Finance |	12437 |	1697 |	13.6 |
 | TOTAL | 240124 | 33118 | 13.8 |
 
-### Results by positon
+### Results by position
 
 #### Management positions
 
 - 2 of 9 managers will be retiring
 ![managers.png](Resources/managers.png)
 
-#### Non Management positions
+#### Non-Management positions
 
 - 12 positions will be retiring above 15% of the employees
 ![retiring_by_position.png](Resources/retiring_by_position.png)
 
-### Relevant Queries
+#### Mentorship program
+
+- 1,549 Employees are candidates for participating as mentors (born in 1965)
+
+## Relevant Queries
 
 ```SQL
 -- Registered Employees in the Database
@@ -244,17 +248,7 @@ ON t1.dept_title = t2.dept_title
 
 ## Summary
 
-Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
-
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-
-
-
-### Results:
-
-There is a bulleted list with four major points from the two analysis deliverables. (6 pt)
-Summary:
-
-The summary addresses the two questions and contains two additional queries or tables that may provide more insight. (5 pt)
+- 13.8% of the employees will be retiring soon (33,118 positions)
+- Special focus should be given to Research and Sales department as the managers are part of the "silver tsunami"
+- Production will be especially stressed as 18.5% of their Senior Staff will be retiring.
+- Under the current criteria only 1,549 employees are candidates to guide as mentors, broader criteria should be used to increase the number of participants.
